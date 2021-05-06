@@ -37,7 +37,7 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
        },
        icon: Icon(Icons.more_vert), 
        itemBuilder: (_) => [
-         PopupMenuItem(child: Text("Favorites"), value: FilterOptions.Favorites),
+         PopupMenuItem(child: Text("Favorite"), value: FilterOptions.Favorites),
          PopupMenuItem(child: Text("All"), value: FilterOptions.All)
        ]),
        Consumer<Cart>(builder: (_, cart, ch) => Badge(
